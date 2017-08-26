@@ -1,0 +1,13 @@
+a {
+	color: black;
+	font-family: "Comic Sans MS";
+	font-size: xx-large;
+	text-decoration: none;
+}
+
+body, html {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+}
