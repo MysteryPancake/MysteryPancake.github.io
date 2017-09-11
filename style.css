@@ -1,9 +1,3 @@
-a {
-	color: black;
-	cursor: default;
-	text-decoration: none;
-}
-
 body, html {
 	align-items: center;
 	background-color: white;
@@ -12,4 +6,10 @@ body, html {
 	font-size: xx-large;
 	height: 100%;
 	justify-content: center;
+}
+
+a {
+	color: black;
+	cursor: default;
+	text-decoration: none;
 }
