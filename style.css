@@ -1,8 +1,6 @@
 a {
 	color: black;
 	cursor: default;
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	font-size: xx-large;
 	text-decoration: none;
 }
 
@@ -10,6 +8,8 @@ body, html {
 	align-items: center;
 	background-color: white;
 	display: flex;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: xx-large;
 	height: 100%;
 	justify-content: center;
 }
