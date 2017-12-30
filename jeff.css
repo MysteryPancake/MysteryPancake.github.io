@@ -3,6 +3,10 @@ html, body {
     background-image: url("jeff.png");
 }
 
+div {
+    text-align: center;
+}
+
 iframe {
     border: none;
 }
