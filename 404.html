@@ -16,10 +16,13 @@
 		html, body {
 			background-color: black;
 			background-image: url("jeff.png");
+			margin: 0;
+			padding: 0;
 		}
 		
-		p {
+		span {
 			color: white;
+			display: block;
 			font-family: "Comic Sans MS", cursive, sans-serif;
 			font-size: xx-large;
 		}
@@ -45,7 +48,7 @@
 	</head>
 	<body onload="setup();">
 		<div>
-			<p id="jeff">My name Jeff</p>
+			<span id="jeff">My name Jeff</span>
 			<iframe src="https://www.youtube.com/embed/2K90ZWJvdZw?end=49&autoplay=1&controls=0&modestbranding=1&showinfo=0&disablekb=1&rel=0" height="405" width="720"></iframe>
 			<audio controls>
 				<source src="jeff.ogg" type="audio/ogg">
