@@ -40,7 +40,7 @@
 		</style>
 		<script>
 		function setup() {
-			document.getElementById("jeff").innerHTML = document.location.href;
+			document.getElementById("jeff").innerHTML = document.location.href.split("/").pop();
 		}
 		</script>
 	</head>
