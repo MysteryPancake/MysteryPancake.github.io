@@ -29,11 +29,6 @@
 			font-size: xx-large;
 			text-shadow: 0 0 24px white;
 		}
-		
-		audio {
-			box-shadow: 0 0 24px white;
-			display: block;
-		}
 			
 		iframe {
 			border: none;
@@ -43,7 +38,7 @@
 		<script>
 		function setup() {
 			var url = window.location.pathname.split("/").pop();
-			document.getElementById("jeff").innerHTML = "Welcome to " + decodeURIComponent(url);
+			document.getElementById("jeff").innerHTML = decodeURIComponent(url);
 			document.getElementById("player").src = "https://www.youtube.com/embed?listType=search&autoplay=1&controls=0&loop=1&modestbranding=1&origin=https://mysterypancake.github.io&rel=0&showinfo=0&list=" + url;
 		}
 		</script>
@@ -51,12 +46,7 @@
 	<body onload="setup();">
 		<div>
 			<h1 id="jeff">My name Jeff</h1>
-			<iframe id="player" height="405" width="720"></iframe>
-			<audio controls>
-				<source src="https://mysterypancake.github.io/jeff.ogg" type="audio/ogg">
-				<source src="https://mysterypancake.github.io/jeff.mp3" type="audio/mpeg">
-				<source src="https://mysterypancake.github.io/jeff.wav" type="audio/mpeg">
-			</audio>
+			<iframe id="player" height="607.5" width="1080"></iframe>
 		</div>
 	</body>
 </html>
