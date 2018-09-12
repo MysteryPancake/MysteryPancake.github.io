@@ -15,12 +15,12 @@ function addRepo(repo, div) {
 	request(repo.url + "/readme", function(result) {
 		var container = document.createElement("div");
 		var content = window.atob(JSON.parse(result).content);
-		var match = content.match(/(?<=!\[Icon]\().*?\.(?:png|jpg)[^)]*(?=\))/);
+		var match = content.split("![Icon](")[1];
 		if (match) {
 			var url = document.createElement("a");
 			url.href = repo.homepage || repo.html_url;
 			var img = document.createElement("img");
-			img.src = repo.html_url + "/blob/master/" + match;
+			img.src = repo.html_url + "/blob/master/" + match.split(")").shift();
 			img.width = 72;
 			img.height = 72;
 			url.appendChild(img);
