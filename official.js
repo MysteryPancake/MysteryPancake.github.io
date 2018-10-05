@@ -17,7 +17,7 @@ function addRepo(repo, div) {
 		var content = window.atob(JSON.parse(result).content);
 		var start = content.split("![Icon](")[1];
 		if (start) {
-			var match = start.split(")").shift();
+			var match = start.split(")")[0];
 			if (match && match !== "<ICON_PATH>?raw=true") {
 				var url = document.createElement("a");
 				url.href = repo.homepage || repo.html_url;
