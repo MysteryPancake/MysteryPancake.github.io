@@ -3,6 +3,7 @@
 function request(url, func) {
 	var request = new XMLHttpRequest();
 	request.open("GET", url, true);
+	request.setRequestHeader("User-Agent", "MysteryPancake");
 	request.onreadystatechange = function() {
 		if (this.readyState === 4 && this.status === 200) {
 			func(this.responseText);
