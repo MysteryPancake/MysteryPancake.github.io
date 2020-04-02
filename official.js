@@ -52,7 +52,7 @@ function addRepo(repo, div) {
 		forks.innerHTML = "🔗" + repo.forks_count;
 		info.appendChild(forks);
 		container.appendChild(info);
-		if (repo.has_pages && repo.homepage) {
+		if (repo.has_pages && repo.homepage && repo.homepage.indexOf("mysterypancake.github.io") !== -1) {
 			var frame = document.createElement("iframe");
 			frame.src = repo.homepage;
 			container.appendChild(frame);
