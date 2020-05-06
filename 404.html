@@ -40,7 +40,7 @@
 		<script>
 		function setup() {
 			var url = window.location.pathname.split("/").pop();
-			document.getElementById("jeff").innerHTML = "Welcome to " + decodeURIComponent(url);
+			document.getElementById("jeff").textContent = "Welcome to " + decodeURIComponent(url);
 			document.getElementById("player").src = "https://www.youtube.com/embed?listType=search&autoplay=1&controls=0&loop=1&modestbranding=1&origin=https://mysterypancake.github.io&rel=0&showinfo=0&list=" + url;
 		}
 		</script>
