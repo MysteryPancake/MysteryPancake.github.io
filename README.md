@@ -1,4 +1,4 @@
 # [MysteryPancake.github.io](https://mysterypancake.github.io)
-Welcome to the greatest repository on GitHub
+Welcome to hell
 
-![Icon](icon.png?raw=true)
+<img src="icon.png?raw=true" width="256">
