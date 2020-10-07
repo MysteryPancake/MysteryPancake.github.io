@@ -1,4 +1,4 @@
-# [MysteryPancake.github.io](https://mysterypancake.github.io)
-Welcome to hell
+<img src="icon.png?raw=true" width="84" align="left">
 
-<img src="icon.png?raw=true" width="256">
+# [MysteryPancake.github.io](https://mysterypancake.github.io)
+Welcome to hell.
