@@ -2,3 +2,8 @@
 ---
 
 @import "base";
+
+.hover-glow:hover {
+	filter: brightness(120%);
+	text-shadow: 0 0 16px white;
+}

@@ -13,3 +13,4 @@ a:hover { color: #FFFF80; }
 @font-face { font-family: "Inter"; src: url("/assets/fonts/Inter-Bold.ttf") format("truetype"); font-weight: 700; font-style: normal; }
 @font-face { font-family: "Inter"; src: url("/assets/fonts/Inter-ExtraBold.ttf") format("truetype"); font-weight: 800; font-style: normal; }
 @font-face { font-family: "Inter"; src: url("/assets/fonts/Inter-Black.ttf") format("truetype"); font-weight: 900; font-style: normal; }
+.hover-glow:hover { filter: brightness(120%); text-shadow: 0 0 16px white; }

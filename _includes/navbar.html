@@ -1,16 +1,19 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top position-absolute" style="background-color: #00000080">
+<nav class="navbar navbar-expand-md navbar-dark {% if include.fixed %}fixed-top position-absolute {% endif %}" style="background-color: #00000080">
 	<div class="container-fluid">
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center w-100">
-				<li class="nav-item">
-					<a class="nav-link active p-3" aria-current="page" href="#">HOME</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link p-3" href="/contact">CONTACT</a>
-				</li>
+				{% for link in site.navigation %}
+					<li class="nav-item">
+					{% if page.url == link.url or (link.url != '/' and page.url contains link.url) %}
+						<a href="{{link.url}}" class="nav-link active p-4" style="font-size: 1.2rem; text-shadow: 0 0 16px white;">{{link.title}}</a>
+					{% else %}
+						<a href="{{link.url}}" class="nav-link p-4" style="font-size: 1.2rem;">{{link.title}}</a>
+					{% endif %}
+					</li>
+				{% endfor %}
 			</ul>
 		</div>
 	</div>
