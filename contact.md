@@ -4,11 +4,12 @@ title: "Contact"
 description: "Contact me here"
 ---
 {% include navbar.html %}
+
 <div class="container mt-5">
 	<h2 class="mb-4" style="font-weight: 900;">CONTACT ME</h2>
 	<p class="mb-4">
 		<span>Feel free to contact me below, though I'm more likely to reply via email at </span>
-		<img src="/assets/icons/email.png" height="18">
+		<img src="{{ "/assets/icons/email.png" | relative_url }}" height="18">
 	</p>
 	<div class="row">
 		{% include contact_link.html icon="fa-linkedin" label="LinkedIn" href="https://www.linkedin.com/in/hallamr/" color="#0966C2" %}
