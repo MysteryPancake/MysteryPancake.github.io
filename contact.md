@@ -7,7 +7,7 @@ description: "Contact me here"
 <div class="container mt-5">
 	<h2 class="mb-4" style="font-weight: 900;">CONTACT ME</h2>
 	<p class="mb-4">
-		<span>Feel free to contact me on any of these websites, though I'm more likely to reply by email at </span>
+		<span>Feel free to contact me below, though I'm more likely to reply via email at </span>
 		<img src="/assets/icons/email.png" height="18">
 	</p>
 	<div class="row">
