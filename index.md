@@ -16,6 +16,23 @@ description: "VFX, Motion Graphics and Coding"
 	</div>
 </div>
 
+<div class="container mt-5">
+	<h2 class="mb-4" style="font-weight: 900;">ABOUT ME</h2>
+	<div class="mb-5">
+		<p>Welcome to my website! I'm a junior effects artist based in Sydney, Australia.</p>
+		<p>Since 2012 I've been addicted to <a href="https://github.com/MysteryPancake/After-Effects-Fun" target="_blank">After Effects</a> and Photoshop, giving me lots of experience with motion graphics. Next I started messing with <a href="https://github.com/MysteryPancake/Blender-Fun" target="_blank">Blender</a> and got into programming. I did a Bachelor of Computer Science and <a href="https://www.blender.org/about/credits/" target="_blank">contributed to Blender's code</a> for a bit of fun. Since then I've been using <a href="https://github.com/MysteryPancake/Houdini-Fun" target="_blank">Houdini</a> for the Masters of Animation and Visualisation at UTS Animal Logic Academy.</p>
+		<p>I also make <a href="https://www.shadertoy.com/user/MysteryPancake/sort=love" target="_blank">shaders</a> and <a href="https://open.spotify.com/artist/22nPt6CqMzobrJySt4CaxK" target="_blank">music</a> on the side!</p>
+	</div>
+	<h2 class="mb-4" style="font-weight: 900;">MY WORK</h2>
+	{% include video_player.html title="Procedural Buildings" description="<p>This was the first time I tried procedural modelling in Houdini. I remade a bunch of Sydney landmarks and turned them into HDAs for easy animation. Around this time I was <a href=\"https://www.shadertoy.com/view/cdXSWj\" target=\"_blank\">making music on ShaderToy</a>, can you tell from the sine waves?</p><p>I rendered everything with Cycles in Blender, which was a total nightmare. I had to <a href=\"https://github.com/MysteryPancake/Houdini-Tools\" target=\"_blank\">write scripts</a> to fix Blender's geometry instancing and ended up redoing half of what I'd done in Houdini using Geometry Nodes.</p><p>I timed everything perfectly to the music, <a href=\"https://open.spotify.com/track/4NczzeHBQPPDO0B9AAmB8d\" target=\"_blank\">Assumptions by Sam Gellaitry</a>. This was surprisingly hard since I never made the setups with animation in mind.</p>" video_id="808257373" color="#342D62" %}
+	{% include video_player.html title="Project 1 Trailer" description="<p>A sneak peak of my passion project that's been dragging on forever. Not learning from previous mistakes, I started in Blender before hitting the roadblock of hair simulation. Blender exploded and surrendered, so I had to bite the bullet. I ported everything to Houdini and learnt Solaris and Karma, then learnt how to do proper color management in After Effects.</p><p>I made everything in this trailer from scratch, except for the good looking artwork in the middle, which was done by <a href=\"https://www.linkedin.com/in/ben-poate-3923a4287/\">Ben Poate</a>. The animation was done using the Rokoko Motion Capture Suit at ALA, with cleanup done in Blender. I'm hoping to finish it by early 2024, so stay tuned!</p>" video_id="865207103" color="#1C1631" %}
+	{% include video_player.html title="Procedural Shaders" description="<p>While learning Katana, I was surprised how fiddly Renderman shaders are for basic things like scaling a noise texture. Since Katana supports Open Shader Language, I <a href=\"https://github.com/MysteryPancake/Katana-OSL-Shaders\" target=\"_blank\">coded my own shaders</a> to make my life easier.</p><p>I got carried away and made a full raymarching engine in a shader, including the correct camera perspective. I used it to render all the fractals thanks to Inigo Quilez.</p><p>Although OSL shaders work in Katana, they don't in Karma. It doesn't have support for OSL scripts yet, so I had to render the fractals in Blender and reproject them back to Karma. Luckily Blender just got GPU support for OSL so it was wonderfully fast. Everything else was rendered in Karma.</p>" video_id="859756363" color="#492013" %}
+	{% include video_player.html title="UTS Showreel" description="<p>A compilation of my best work before 2022, including a breakdown of some fun technical stuff. I made this to apply for the UTS Animal Logic Academy, and luckily they let me in.</p><p>Most of the 3D work was done in Blender, which I've used since 2015. I actually learnt Geometry Nodes before touching Houdini, which is a rare experience nowadays.</p><p>The cool looking geometry warping was done with edge split followed by vector refraction and reflection. It looks even cooler if you do it in a Houdini solver.</p>" video_id="765443818" color="#310953" %}
+	{% include video_player.html title="From Memory" description="todo" video_id="302545077" color="#580D0F" %}
+	{% include video_player.html title="Fake Caustics Tutorial" description="todo" video_id="C9iQKsShYIM" color="#04395F" youtube="true" %}
+	{% include video_player.html title="Dynamic Machines Challenge" description="todo" video_id="PG-CNkrQEvY" color="#6C3F3B" youtube="true" %}
+</div>
+
 <script>
 const canvasElem = document.getElementById("home_canvas");
 const canvasCtx = canvasElem.getContext("2d", { alpha: false });
@@ -63,6 +80,21 @@ function resize() {
 window.addEventListener("resize", resize);
 window.addEventListener("orientationchange", resize);
 resize();
+
+// Lazy load iframe videos so the website doesn't take forever to load
+const observer = new IntersectionObserver(function(entries, observer) {
+	entries.forEach(function(entry) {
+		if (entry.isIntersecting) {
+			entry.target.src = entry.target.getAttribute("data-src");
+			observer.unobserve(entry.target);
+		}
+	});
+});
+
+const iframes = document.getElementsByClassName("lazy-iframe");
+for (let i = 0; i < iframes.length; ++i) {
+	observer.observe(iframes[i]);
+}
 
 const particles = [];
 const numParticles = 320;
@@ -175,20 +207,3 @@ function draw() {
 
 window.requestAnimationFrame(draw);
 </script>
-
-<div class="container mt-5">
-	<h2 class="mb-4" style="font-weight: 900;">ABOUT ME</h2>
-	<div class="mb-5">
-		<p>Welcome to my website! I'm a junior effects artist based in Sydney, Australia.</p>
-		<p>Since 2012 I've been addicted to <a href="https://github.com/MysteryPancake/After-Effects-Fun" target="_blank">After Effects</a> and Photoshop, giving me lots of experience with motion graphics. Next I started messing with <a href="https://github.com/MysteryPancake/Blender-Fun" target="_blank">Blender</a> and got into programming. I did a Bachelor of Computer Science and <a href="https://www.blender.org/about/credits/" target="_blank">contributed to Blender's code</a> for a bit of fun. Since then I've been using <a href="https://github.com/MysteryPancake/Houdini-Fun" target="_blank">Houdini</a> for the Masters of Animation and Visualisation at UTS Animal Logic Academy.</p>
-		<p>I also make <a href="https://www.shadertoy.com/user/MysteryPancake/sort=love" target="_blank">shaders</a> and <a href="https://open.spotify.com/artist/22nPt6CqMzobrJySt4CaxK" target="_blank">music</a> on the side!</p>
-	</div>
-	<h2 class="mb-4" style="font-weight: 900;">MY WORK</h2>
-	{% include video_player.html title="Procedural Buildings" description="<p>This was the first time I tried procedural modelling in Houdini. I remade a bunch of Sydney landmarks and turned them into HDAs for easy animation. Around this time I was <a href=\"https://www.shadertoy.com/view/cdXSWj\" target=\"_blank\">making music on ShaderToy</a>, can you tell from the sine waves?</p><p>I rendered everything with Cycles in Blender, which was a total nightmare. I had to <a href=\"https://github.com/MysteryPancake/Houdini-Tools\" target=\"_blank\">write scripts</a> to fix Blender's geometry instancing and ended up redoing half of what I'd done in Houdini using Geometry Nodes.</p><p>I timed everything perfectly to the music, <a href=\"https://open.spotify.com/track/4NczzeHBQPPDO0B9AAmB8d\" target=\"_blank\">Assumptions by Sam Gellaitry</a>. This was surprisingly hard since I never made the setups with animation in mind.</p>" video_id="808257373" color="#342D62" %}
-	{% include video_player.html title="Project 1 Trailer" description="<p>A sneak peak of a passion project that's been dragging on for months. Not learning from previous mistakes, I started in Blender before hitting the roadblock of hair simulation. Blender exploded and surrendered, so I had to bite the bullet.</p><p>I ported everything to Houdini and learnt Solaris and Karma, then learnt how to do proper color management in After Effects. I should be using Nuke but it's too late in production now.</p><p>The animation was done using the Rokoko Motion Capture Suit at ALA, with cleanup done in Blender. I'm hoping to finish it by early 2024, so stay tuned!</p>" video_id="865207103" color="#1C1631" %}
-	{% include video_player.html title="Procedural Shaders" description="<p>While learning Katana, I was surprised how fiddly Renderman shaders are for basic things like scaling a noise texture. Since Katana supports Open Shader Language, I <a href=\"https://github.com/MysteryPancake/Katana-OSL-Shaders\" target=\"_blank\">coded my own shaders</a> to make my life easier.</p><p>I got carried away and made a full raymarching engine in a shader, including the correct camera perspective. I used it to render all the fractals thanks to Inigo Quilez.</p><p>Although OSL shaders work in Katana, they don't in Karma. It doesn't have support for OSL scripts yet, so I had to render the fractals in Blender and reproject them back to Karma. Luckily Blender just got GPU support for OSL so it was wonderfully fast. Everything else was rendered in Karma.</p>" video_id="859756363" color="#492013" %}
-	{% include video_player.html title="UTS Showreel" description="<p>A compilation of my best work before 2022, including a breakdown of some fun technical stuff. I made this to apply for the UTS Animal Logic Academy, and luckily they let me in.</p><p>Most of the 3D work was done in Blender, which I've used since 2015. I actually learnt Geometry Nodes before touching Houdini, which is a rare experience nowadays.</p><p>The cool looking geometry warping was done with edge split followed by vector refraction and reflection. It looks even cooler if you do it in a Houdini solver.</p>" video_id="765443818" color="#310953" %}
-	{% include video_player.html title="From Memory" description="todo" video_id="302545077" color="#580D0F" %}
-	{% include video_player.html title="Fake Caustics Tutorial" description="todo" video_id="C9iQKsShYIM" color="#04395F" youtube="true" %}
-	{% include video_player.html title="Dynamic Machines Challenge" description="todo" video_id="PG-CNkrQEvY" color="#6C3F3B" youtube="true" %}
-</div>
