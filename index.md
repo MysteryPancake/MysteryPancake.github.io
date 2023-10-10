@@ -100,7 +100,7 @@ const particles = [];
 const numParticles = 320;
 for (let i = 0; i < numParticles; ++i) {
 	// X, Y, velocity X, velocity Y, speed, friend ID
-	particles.push([Math.random() * canvasElem.width, Math.random() * canvasElem.height, 0, 0, Math.random(), Math.floor(Math.random() * numParticles)]);
+	particles.push([Math.random() * window.innerWidth, Math.random() * window.innerHeight * 0.75, 0, 0, Math.random(), Math.floor(Math.random() * numParticles)]);
 }
 
 canvasElem.addEventListener("mousemove", function(e) {
