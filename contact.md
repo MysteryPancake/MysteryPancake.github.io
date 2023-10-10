@@ -23,6 +23,6 @@ description: "Contact me here"
 	<div class="row">
 		{% include contact_link.html icon="fa-cube" label="Sketchfab" href="https://sketchfab.com/mysterypancake" color="#1EA9D9" %}
 		{% include contact_link.html icon="fa-code" label="ShaderToy" href="https://www.shadertoy.com/user/MysteryPancake/sort=love" color="#383838" %}
-		{% include contact_link.html icon="fa-stack-overflow" label="Stack Overflow" href="https://stackoverflow.com/users/6931415/mysterypancake" color="#c25d0a" %}
+		{% include contact_link.html icon="fa-google" label="Gumroad" href="https://mysterypancake.gumroad.com/" color="#d943bb" %}
 	</div>
 </div>

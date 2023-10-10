@@ -8,9 +8,9 @@
 				{% for link in site.navigation %}
 					<li class="nav-item">
 					{% if page.url == link.url or (link.url != '/' and page.url contains link.url) %}
-						<a href="{{link.url}}" class="nav-link active p-4" style="font-size: 1.2rem; text-shadow: 0 0 16px white;">{{link.title}}</a>
+						<a href="{{link.url}}" class="nav-link active p-3" style="font-size: 1.2rem; text-shadow: 0 0 16px white;">{{link.title}}</a>
 					{% else %}
-						<a href="{{link.url}}" class="nav-link p-4" style="font-size: 1.2rem;">{{link.title}}</a>
+						<a href="{{link.url}}" class="nav-link p-3" style="font-size: 1.2rem;">{{link.title}}</a>
 					{% endif %}
 					</li>
 				{% endfor %}
