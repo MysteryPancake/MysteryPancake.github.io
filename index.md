@@ -166,12 +166,12 @@ function draw() {
 		}
 
 		// Draw line
-		const xColor = Math.min(200, Math.floor(Math.abs(xDist * 0.3)));
-		const yColor = Math.min(200, Math.floor(Math.abs(yDist * 0.3)));
+		const xColor = Math.floor(Math.abs(xDist * 0.3));
+		const yColor = Math.floor(Math.abs(yDist * 0.3));
 		if (colorScheme) {
 			canvasCtx.strokeStyle = `rgb(${xColor},0,${yColor})`;
 		} else {
-			canvasCtx.strokeStyle = `rgb(${xColor},${yColor},200)`;
+			canvasCtx.strokeStyle = `rgb(${xColor},${yColor},255)`;
 		}
 		canvasCtx.lineWidth = Math.min(512, 2 / particle[4]);
 		canvasCtx.beginPath();
