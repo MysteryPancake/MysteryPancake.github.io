@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Hallam Roberts"
+title: "Home"
 description: "Visual Effects, Motion Graphics and Programming"
 ---
 {% include navbar.html fixed="true" %}

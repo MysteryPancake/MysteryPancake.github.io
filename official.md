@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Hallam Roberts"
-description: "The official website"
+title: "Official"
+description: "My real official website"
 ---
 <script>
 function play() {
