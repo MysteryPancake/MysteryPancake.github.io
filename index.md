@@ -13,7 +13,7 @@ description: "Visual Effects, Motion Graphics and Programming"
 			<span id="home_lastname" class="text-white position-relative" style="font-size: min(10vw, 7rem); font-weight: 200; text-shadow: 0 0 8px white;">Roberts</span>
 		</div>
 		<div id="home_description" class="text-white position-relative">
-			<span style="font-size: min(4vw, 2.5rem); font-weight: 300;">VFX | Motion Graphics | Programming</span>
+			<span style="font-size: min(4vw, 2.5rem); font-weight: 300;">FX | Motion Graphics | Programming</span>
 			<div style="font-size: 3.5rem;">
 				{% include footer_link.html icon="fa-linkedin" href="https://www.linkedin.com/in/hallamr/" %}
 				{% include footer_link.html icon="fa-vimeo" href="https://vimeo.com/mysterypancake" %}
