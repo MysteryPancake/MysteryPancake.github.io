@@ -2,6 +2,7 @@
 layout: default
 title: "Home"
 description: "Visual Effects, Motion Graphics and Programming"
+permalink: /
 ---
 {% include navbar.html fixed="true" %}
 
