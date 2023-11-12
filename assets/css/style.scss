@@ -3,7 +3,11 @@
 
 @import "base";
 
+.hover-glow {
+	transition: text-shadow 0.15s;
+}
+
 .hover-glow:hover {
-	filter: brightness(120%);
+	filter: brightness(125%);
 	text-shadow: 0 0 16px white;
 }
