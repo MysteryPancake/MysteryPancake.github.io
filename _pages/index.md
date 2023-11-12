@@ -45,7 +45,6 @@ permalink: /
 
 {% include footer.html %}
 
-<!--<script src="{{ "/assets/js/intersectionobserver_polyfill.js" | relative_url }}"></script>-->
 <script src="{{ "/assets/js/requestframe_polyfill.js" | relative_url }}"></script>
 <script>
 const canvasElem = document.getElementById("home_canvas");
@@ -69,21 +68,6 @@ function resize() {
 window.addEventListener("resize", resize);
 window.addEventListener("orientationchange", resize);
 resize();
-
-// Lazy load iframe videos so the website doesn't take forever to load
-/*const observer = new IntersectionObserver(function(entries, observer) {
-	entries.forEach(function(entry) {
-		if (entry.isIntersecting) {
-			entry.target.src = entry.target.getAttribute("data-src");
-			observer.unobserve(entry.target);
-		}
-	});
-});
-
-const iframes = document.getElementsByClassName("lazy-iframe");
-for (let i = 0; i < iframes.length; ++i) {
-	observer.observe(iframes[i]);
-}*/
 
 const particles = [];
 const numParticles = 320;
