@@ -4,10 +4,21 @@
 @import "base";
 
 .hover-glow {
-	transition: text-shadow 0.1s;
+	transition-property: all;
+	transition-duration: 0.1s;
 }
 
 .hover-glow:hover {
 	filter: brightness(125%);
 	text-shadow: 0 0 16px white;
+}
+
+.hover-scale {
+	transition-property: all;
+	transition-duration: 0.1s;
+	transform: scale(100%);
+}
+
+.hover-scale:hover {
+	transform: scale(105%);
 }
