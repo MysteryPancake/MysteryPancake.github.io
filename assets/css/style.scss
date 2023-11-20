@@ -16,6 +16,7 @@
 .hover-scale {
 	transition-property: all;
 	transition-duration: 0.1s;
+	transition-timing-function: cubic-bezier(0.18,0.89,0.3,1.67);
 	transform: scale(100%);
 }
 
