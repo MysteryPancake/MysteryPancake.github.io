@@ -4,8 +4,7 @@
 @import "base";
 
 .hover-glow {
-	transition-property: all;
-	transition-duration: 0.1s;
+	transition: filter 0.1s;
 }
 
 .hover-glow:hover {
@@ -13,13 +12,12 @@
 	text-shadow: 0 0 16px white;
 }
 
-.hover-scale {
-	transition-property: all;
-	transition-duration: 0.1s;
-	transition-timing-function: cubic-bezier(0.18,0.89,0.3,1.67);
-	transform: scale(100%);
+.hover-contact {
+	transition: filter 0.1s linear, transform 0.1s cubic-bezier(0.2, 0.9, 0.3, 1.67);
 }
 
-.hover-scale:hover {
+.hover-contact:hover {
+	filter: brightness(125%);
 	transform: scale(105%);
+	text-shadow: 0 0 16px white;
 }
