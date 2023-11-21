@@ -26,4 +26,9 @@ description: "Contact me here"
 		{% include contact_link.html icon="fa-code" label="ShaderToy" href="https://www.shadertoy.com/user/MysteryPancake/sort=love" color="#383838" %}
 		{% include contact_link.html icon="fa-google" label="Gumroad" href="https://mysterypancake.gumroad.com/" color="#d943bb" %}
 	</div>
+	<div class="row">
+		{% include contact_link.html icon="fa-registered" label="The Rookies" href="https://www.therookies.co/u/MysteryPancake" color="#c49930" %}
+		{% include contact_link.html icon="fa-paint-brush" label="ArtStation" href="https://www.artstation.com/hallam" color="#24baff" %}
+		{% include contact_link.html icon="fa-stack-overflow" label="Stack Overflow" href="https://stackoverflow.com/users/6931415/mysterypancake" color="#e07726" %}
+	</div>
 </div>
