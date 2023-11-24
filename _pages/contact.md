@@ -24,11 +24,11 @@ description: "Contact me here"
 	<div class="row mx-0">
 		{% include contact_link.html icon="fa-cube" label="Sketchfab" href="https://sketchfab.com/mysterypancake" color="#1EA9D9" %}
 		{% include contact_link.html icon="fa-code" label="ShaderToy" href="https://www.shadertoy.com/user/MysteryPancake/sort=love" color="#383838" %}
-		{% include contact_link.html icon="fa-google" label="Gumroad" href="https://mysterypancake.gumroad.com/" color="#d943bb" %}
+		{% include contact_link.html icon="fa-paint-brush" label="ArtStation" href="https://www.artstation.com/hallam" color="#24baff" %}
 	</div>
 	<div class="row mx-0">
+		{% include contact_link.html icon="fa-google" label="Gumroad" href="https://mysterypancake.gumroad.com/" color="#d943bb" %}
 		{% include contact_link.html icon="fa-registered" label="The Rookies" href="https://www.therookies.co/u/MysteryPancake" color="#c49930" %}
-		{% include contact_link.html icon="fa-paint-brush" label="ArtStation" href="https://www.artstation.com/hallam" color="#24baff" %}
 		{% include contact_link.html icon="fa-stack-overflow" label="Stack Overflow" href="https://stackoverflow.com/users/6931415/mysterypancake" color="#e07726" %}
 	</div>
 </div>
