@@ -31,8 +31,10 @@ permalink: /
 		<p>Since 2012 I've been addicted to <a href="https://github.com/MysteryPancake/After-Effects-Fun" target="_blank">After Effects</a> and Photoshop, giving me a strong foundation in motion graphics. Later I started with <a href="https://github.com/MysteryPancake/Blender-Fun" target="_blank">Blender</a> and got into coding. I did a Bachelor of Computer Science and <a href="https://www.blender.org/about/credits/" target="_blank">contributed</a> to Blender's codebase. Since then I've been using <a href="https://github.com/MysteryPancake/Houdini-Fun" target="_blank">Houdini</a> for the Masters of Animation and Visualisation at UTS Animal Logic Academy.</p>
 		<p>I also make <a href="https://www.shadertoy.com/user/MysteryPancake/sort=love" target="_blank">shaders</a> and <a href="https://open.spotify.com/artist/22nPt6CqMzobrJySt4CaxK" target="_blank">music</a> for fun, be sure to check it out!</p>
 	</div>
-	<!--<h2 class="mb-4" style="font-weight: 900;">REEL</h2>
-	<div style="padding: 56.25% 0 0 0;" class="position-relative mb-5">
+	<h2 class="mb-4" style="font-weight: 900;">REEL</h2>
+	<p>Apologies, I'm still working on my reel for 2023 (check back soon).</p>
+	<p class="mb-5">For now, my work is split into separate videos below. Watch them for the same experience as watching my reel.</p>
+	<!--<div style="padding: 56.25% 0 0 0;" class="position-relative mb-5">
 		<iframe data-src="https://player.vimeo.com/video/765443818?title=0&byline=0&portrait=0" class="position-absolute top-0 left-0 w-100 h-100 lazy-iframe" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 		<div class="position-absolute top-0 left-0 w-100 h-100 bg-black text-center">COMING SOON</div>
 	</div>-->
