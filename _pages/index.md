@@ -33,7 +33,7 @@ permalink: /
 	</div>
 	<h2 class="mb-4" style="font-weight: 900;">REEL</h2>
 	<p>Apologies, I'm still working on my reel for 2023 (check back soon).</p>
-	<p class="mb-5">For now, my work is split into separate videos below. Watch them for the same experience as watching my reel.</p>
+	<p class="mb-5">For now, my work is split into separate videos below.</p>
 	<!--<div style="padding: 56.25% 0 0 0;" class="position-relative mb-5">
 		<iframe data-src="https://player.vimeo.com/video/765443818?title=0&byline=0&portrait=0" class="position-absolute top-0 left-0 w-100 h-100 lazy-iframe" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 		<div class="position-absolute top-0 left-0 w-100 h-100 bg-black text-center">COMING SOON</div>
