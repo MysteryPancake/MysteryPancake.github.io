@@ -33,7 +33,7 @@ permalink: /
 	</div>
 	<h2 class="mb-4" style="font-weight: 900;">REEL (WIP)</h2>
 	<div style="padding: 56.25% 0 0 0;" class="position-relative mb-5">
-		<iframe data-src="https://www.youtube.com/embed/vDQ29popDTk" class="position-absolute top-0 left-0 w-100 h-100 lazy-iframe" frameborder="0" allow="autoplay; encrypted-media; web-share" allowfullscreen></iframe>
+		<iframe data-src="https://www.youtube.com/embed/kKa_A6r_ew4" class="position-absolute top-0 left-0 w-100 h-100 lazy-iframe" frameborder="0" allow="autoplay; encrypted-media; web-share" allowfullscreen></iframe>
 	</div>
 	<h2 class="mb-4" style="font-weight: 900;">MY WORK</h2>
 	{% include video_player.html title="Procedural Buildings" description="<p>This was the first time I tried procedural modelling in Houdini. I remade a bunch of Sydney landmarks and turned them into HDAs for easy control. Around this time I was making <a href=\"https://www.shadertoy.com/view/cdXSWj\" target=\"_blank\">music</a> on ShaderToy, perhaps you can tell from the sine waves.</p><p>I rendered everything with Cycles in Blender, which was a nightmare. I had to write <a href=\"https://github.com/MysteryPancake/Houdini-Tools\" target=\"_blank\">scripts</a> to fix Blender's instancing and had to redo most of what I'd done in Houdini using Geometry Nodes.</p><p>Everything is timed exactly to the music, <a href=\"https://open.spotify.com/track/4NczzeHBQPPDO0B9AAmB8d\" target=\"_blank\">Assumptions by Sam Gellaitry</a>. This was tricky since I didn't make the setups with animation in mind.</p>" video_id="808257373" color="#342D62" %}
