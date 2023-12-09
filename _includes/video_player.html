@@ -4,7 +4,7 @@
 		{% if include.youtube %}
 			<iframe data-src="https://www.youtube.com/embed/{{include.video_id}}" class="position-absolute top-0 left-0 w-100 h-100 lazy-iframe" frameborder="0" allow="autoplay; encrypted-media; web-share" allowfullscreen></iframe>
 		{% else %}
-			<iframe data-src="https://player.vimeo.com/video/{{include.video_id}}?title=0&byline=0&portrait=0" class="position-absolute top-0 left-0 w-100 h-100 lazy-iframe" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+			<iframe data-src="https://player.vimeo.com/video/{{include.video_id}}?title=0&byline=0&portrait=0&quality=1080p" class="position-absolute top-0 left-0 w-100 h-100 lazy-iframe" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 		{% endif %}
 		</div>
 	</div>
