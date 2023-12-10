@@ -25,15 +25,15 @@ permalink: /
 </div>
 
 <div class="container mt-5">
+	<h2 class="mb-4" style="font-weight: 900;">REEL</h2>
+	<div style="padding: 56.25% 0 0 0;" class="position-relative mb-5">
+		<iframe data-src="https://player.vimeo.com/video/892894967?title=0&byline=0&portrait=0&quality=1080p" class="position-absolute top-0 left-0 w-100 h-100 lazy-iframe" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+	</div>
 	<h2 class="mb-4" style="font-weight: 900;">ABOUT ME</h2>
 	<div class="mb-5">
 		<p>Welcome to my website! I'm a junior FX artist based in Sydney, Australia.</p>
 		<p>Since 2012 I've been addicted to <a href="https://github.com/MysteryPancake/After-Effects-Fun" target="_blank">After Effects</a> and Photoshop, giving me a strong foundation in motion graphics. Later I started with <a href="https://github.com/MysteryPancake/Blender-Fun" target="_blank">Blender</a> and got into coding. I did a Bachelor of Computer Science and <a href="https://www.blender.org/about/credits/" target="_blank">contributed</a> to Blender's codebase. Since then I've been using <a href="https://github.com/MysteryPancake/Houdini-Fun" target="_blank">Houdini</a> for the Masters of Animation and Visualisation at UTS Animal Logic Academy.</p>
 		<p>I also make <a href="https://www.shadertoy.com/user/MysteryPancake/sort=love" target="_blank">shaders</a> and <a href="https://open.spotify.com/artist/22nPt6CqMzobrJySt4CaxK" target="_blank">music</a> for fun, be sure to check it out!</p>
-	</div>
-	<h2 class="mb-4" style="font-weight: 900;">REEL</h2>
-	<div style="padding: 56.25% 0 0 0;" class="position-relative mb-5">
-		<iframe data-src="https://player.vimeo.com/video/892894967?title=0&byline=0&portrait=0&quality=1080p" class="position-absolute top-0 left-0 w-100 h-100 lazy-iframe" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 	</div>
 	<h2 class="mb-4" style="font-weight: 900;">MY WORK</h2>
 	{% include video_player.html title="Procedural Buildings" description="<p>This was the first time I tried procedural modelling in Houdini. I remade a bunch of Sydney landmarks and turned them into HDAs for easy control. Around this time I was making <a href=\"https://www.shadertoy.com/view/cdXSWj\" target=\"_blank\">music</a> on ShaderToy, perhaps you can tell from the sine waves.</p><p>I rendered everything with Cycles in Blender, which was a nightmare. I had to write <a href=\"https://github.com/MysteryPancake/Houdini-Tools\" target=\"_blank\">scripts</a> to fix Blender's instancing and had to redo most of what I'd done in Houdini using Geometry Nodes.</p><p>Everything is timed exactly to the music, <a href=\"https://open.spotify.com/track/4NczzeHBQPPDO0B9AAmB8d\" target=\"_blank\">Assumptions by Sam Gellaitry</a>. This was tricky since I didn't make the setups with animation in mind.</p>" video_id="808257373" color="#342D62" %}
