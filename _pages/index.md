@@ -32,7 +32,7 @@ permalink: /
 	<h2 class="mb-4" style="font-weight: 900;">ABOUT ME</h2>
 	<div class="mb-5">
 		<p>Welcome to my website! I'm currently a Junior FX TD at ILM Sydney.</p>
-		<p>I've been making videos online since 2012. I started with <a href="https://github.com/MysteryPancake/After-Effects-Fun" target="_blank">After Effects</a>, <a href="https://github.com/MysteryPancake/Blender-Fun" target="_blank">Blender</a> and Photoshop, giving me a strong background in motion graphics. Next I got into coding and did a Bachelor of Computer Science. Later I started learning <a href="https://github.com/MysteryPancake/Houdini-Fun" target="_blank">Houdini</a>, and did a masters at UTS Animal Logic Academy.</p>
+		<p>I've been making videos online since 2012. I started off making motion graphics with <a href="https://github.com/MysteryPancake/After-Effects-Fun" target="_blank">After Effects</a>, <a href="https://github.com/MysteryPancake/Blender-Fun" target="_blank">Blender</a> and Photoshop. Next I got into coding and did a Bachelor of Computer Science. Later I started learning <a href="https://github.com/MysteryPancake/Houdini-Fun" target="_blank">Houdini</a>, and did a masters at UTS Animal Logic Academy.</p>
 		<p>I like exploring <a href="http://github.com/MysteryPancake/Houdini-Fun" target="_blank">random topics in Houdini</a> and <a href="https://www.blender.org/about/credits/" target="_blank">working on Blender</a>. I also make <a href="https://www.shadertoy.com/user/MysteryPancake/sort=love" target="_blank">shaders</a> and <a href="https://open.spotify.com/artist/22nPt6CqMzobrJySt4CaxK" target="_blank">music</a> for fun, be sure to check it out!</p>
 	</div>
 	<h2 class="mb-4" style="font-weight: 900;">MY WORK</h2>
