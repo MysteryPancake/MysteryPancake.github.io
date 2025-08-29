@@ -33,5 +33,7 @@ description: "Contact me here"
 	</div>
 	<div class="row mx-0">
 		{% include contact_link.html icon="fa-instagram" label="Instagram" href="https://www.instagram.com/mysterypancake1/" color="#e6196e" %}
+		{% include contact_link.html icon="fa-spotify" label="Spotify" href="https://open.spotify.com/artist/22nPt6CqMzobrJySt4CaxK" color="#13ae4a" %}
+		{% include contact_link.html icon="fa-volume-up" label="Freesound" href="https://freesound.org/people/MysteryPancake/" color="#e60013" %}
 	</div>
 </div>
