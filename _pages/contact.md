@@ -31,4 +31,7 @@ description: "Contact me here"
 		{% include contact_link.html icon="fa-registered" label="The Rookies" href="https://www.therookies.co/u/MysteryPancake" color="#c49930" %}
 		{% include contact_link.html icon="fa-stack-overflow" label="Stack Overflow" href="https://stackoverflow.com/users/6931415/mysterypancake" color="#e07726" %}
 	</div>
+	<div class="row mx-0">
+		{% include contact_link.html icon="fa-instagram" label="Instagram" href="https://www.instagram.com/mysterypancake1/" color="#e6196e" %}
+	</div>
 </div>
