@@ -19,6 +19,7 @@ permalink: /
 				{% include footer_link.html icon="fa-linkedin" href="https://www.linkedin.com/in/hallamr/" %}
 				{% include footer_link.html icon="fa-vimeo" href="https://vimeo.com/mysterypancake" %}
 				{% include footer_link.html icon="fa-github" href="https://github.com/MysteryPancake" %}
+				{% include footer_link.html icon="fa-instagram" href="https://instagram.com/mysterypancake1/" %}
 			</div>
 		</div>
 	</div>
