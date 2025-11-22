@@ -18,6 +18,10 @@ a:hover {
   color: $linkHover;
 }
 
+iframe {
+  border: none;
+}
+
 @font-face {
   font-family: "Inter";
   src: url("/assets/fonts/Inter-Thin.ttf") format("truetype");

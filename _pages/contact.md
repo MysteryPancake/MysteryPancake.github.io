@@ -9,7 +9,7 @@ description: "Contact me here"
 	<h2 class="mb-4" style="font-weight: 900;">CONTACT ME</h2>
 	<p class="mb-4">
 		<span>Feel free to contact me below, though I'm more likely to reply via email at </span>
-		<img src="{{ "/assets/icons/email.png" | relative_url }}" height="18">
+		<img src="{{ "/assets/icons/email.png" | relative_url }}" height="18" alt="mystery pancake 1 at gmail dot com">
 	</p>
 	<div class="row mx-0">
 		{% include contact_link.html icon="fa-linkedin" label="LinkedIn" href="https://www.linkedin.com/in/hallamr/" color="#0966C2" %}

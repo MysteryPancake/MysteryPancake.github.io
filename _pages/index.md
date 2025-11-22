@@ -28,7 +28,7 @@ permalink: /
 <div class="container mt-5">
 	<h2 class="mb-4" style="font-weight: 900;">REEL</h2>
 	<div style="padding: 56.25% 0 0 0;" class="position-relative mb-5">
-		<iframe data-src="https://player.vimeo.com/video/892894967?title=0&byline=0&portrait=0&quality=1080p" class="position-absolute top-0 left-0 w-100 h-100 lazy-iframe" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+		<iframe data-src="https://player.vimeo.com/video/892894967?title=0&byline=0&portrait=0&quality=1080p" class="position-absolute top-0 left-0 w-100 h-100 lazy-iframe" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 	</div>
 	<h2 class="mb-4" style="font-weight: 900;">ABOUT ME</h2>
 	<div class="mb-5">
