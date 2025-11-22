@@ -6,7 +6,7 @@ permalink: /
 ---
 {% include navbar.html fixed="true" %}
 
-<header class="text-center d-flex align-items-center position-relative overflow-hidden" style="height: 75vh; background-color: black; box-shadow: 0 0 16px black" role="header">
+<header class="text-center d-flex align-items-center position-relative overflow-hidden" style="height: 75vh; background-color: black; box-shadow: 0 0 16px black" role="banner">
 	<canvas id="home_canvas" class="w-100 h-100 position-absolute"></canvas>
 	<div class="w-100">
 		<div>
