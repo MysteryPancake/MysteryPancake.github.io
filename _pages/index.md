@@ -6,7 +6,7 @@ permalink: /
 ---
 {% include navbar.html fixed="true" %}
 
-<div class="text-center d-flex align-items-center position-relative overflow-hidden" style="height: 75vh; background-color: black; box-shadow: 0 0 16px black">
+<header class="text-center d-flex align-items-center position-relative overflow-hidden" style="height: 75vh; background-color: black; box-shadow: 0 0 16px black" role="header">
 	<canvas id="home_canvas" class="w-100 h-100 position-absolute"></canvas>
 	<div class="w-100">
 		<div>
@@ -16,19 +16,19 @@ permalink: /
 		<div id="home_description" class="text-white position-relative">
 			<span style="font-size: min(4vw, 2.5rem); font-weight: 300;">FX | Motion Graphics | Programming</span>
 			<div style="font-size: 3.5rem;">
-				{% include footer_link.html icon="fa-linkedin" href="https://www.linkedin.com/in/hallamr/" %}
-				{% include footer_link.html icon="fa-vimeo" href="https://vimeo.com/mysterypancake" %}
-				{% include footer_link.html icon="fa-github" href="https://github.com/MysteryPancake" %}
-				{% include footer_link.html icon="fa-instagram" href="https://instagram.com/mysterypancake1/" %}
+				{% include footer_link.html label="LinkedIn" icon="fa-linkedin" href="https://www.linkedin.com/in/hallamr/" %}
+				{% include footer_link.html label="Vimeo" icon="fa-vimeo" href="https://vimeo.com/mysterypancake" %}
+				{% include footer_link.html label="GitHub" icon="fa-github" href="https://github.com/MysteryPancake" %}
+				{% include footer_link.html label="Instagram" icon="fa-instagram" href="https://instagram.com/mysterypancake1/" %}
 			</div>
 		</div>
 	</div>
-</div>
+</header>
 
-<div class="container mt-5">
-	<h2 class="mb-4" style="font-weight: 900;">REEL</h2>
+<main class="container mt-5" role="main">
+	<h2 class="mb-4" style="font-weight: 900;">SHOWREEL</h2>
 	<div style="padding: 56.25% 0 0 0;" class="position-relative mb-5">
-		<iframe data-src="https://player.vimeo.com/video/892894967?title=0&byline=0&portrait=0&quality=1080p" class="position-absolute top-0 left-0 w-100 h-100 lazy-iframe" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+		<iframe data-src="https://player.vimeo.com/video/892894967?title=0&byline=0&portrait=0&quality=1080p" class="position-absolute top-0 left-0 w-100 h-100 lazy-iframe" allow="autoplay; fullscreen; picture-in-picture" title="Showreel"></iframe>
 	</div>
 	<h2 class="mb-4" style="font-weight: 900;">ABOUT ME</h2>
 	<div class="mb-5">
@@ -49,7 +49,7 @@ permalink: /
 	{% include video_player.html title="Alone" description="<p>The final film we finished at UTS Animal Logic Academy. I worked on the plant watering, smoke sims and thrusters.</p><p>The watering was tricky since I couldn't get two way coupling to work. Ideally the plant and water would influence eachother, except the plant was Vellum and the fluid was POP.</p><p>I ended up transferring the POP velocity onto Vellum, then running another POP sim afterwards to get proper collisions with the leaves. I would've tried Vellum Fluid, but all the supervisors I talked to said it's much worse than FLIP.</p>" video_id="6vqREp6mFKs" color="#1e2140" youtube="true" %}
 	{% include video_player.html title="Dave's First Day" description="<p>A student film many of us worked on outside of class at UTS Animal Logic Academy. Judisak Meng did a fantastic job at directing, it turned out just as good as Coffee Brake.</p><p>I worked on many different effects including cloth, mopping, coffee spilling, boxes falling and the planet exploding. It was great fun using the RBD Guide feature to prevent the boxes falling onto the button.</p><p>Although the planet was hit from the front, it looked better to spread out sideways. Setting the velocity didn't look good, so I used a sphere collider instead.</p>" video_id="Wt1uGI2jYAQ" color="#700f0f" youtube="true" %}
 	{% include video_player.html title="Vertex Block Descent in Houdini" description="<p>I was very interested in the <a href=\"https://ankachan.github.io/Projects/VertexBlockDescent/index.html\">Vertex Block Descent paper</a>, as it promised many improvements over Vellum (XPBD). I ported it to OpenCL to compare it.</p><p>Sadly VBD is not stable in general, but it taught me a lot about physics simulation and a lot about OpenCL, especially for managing workgroups.</p><p>I want to keep working on it to add support for rigid bodies and other features from the new <a href=\"https://graphics.cs.utah.edu/research/projects/avbd/\">Augmented Vertex Block Descent paper</a>.</p>" video_id="1113876636" color="#001733" %}
-</div>
+</main>
 
 {% include footer.html %}
 

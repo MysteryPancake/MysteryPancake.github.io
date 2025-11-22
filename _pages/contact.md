@@ -5,7 +5,7 @@ description: "Contact me here"
 ---
 {% include navbar.html %}
 
-<div class="container mt-5">
+<main class="container mt-5" role="main">
 	<h2 class="mb-4" style="font-weight: 900;">CONTACT ME</h2>
 	<p class="mb-4">
 		<span>Feel free to contact me below, though I'm more likely to reply via email at </span>
@@ -36,4 +36,4 @@ description: "Contact me here"
 		{% include contact_link.html icon="fa-spotify" label="Spotify" href="https://open.spotify.com/artist/22nPt6CqMzobrJySt4CaxK" color="#13ae4a" %}
 		{% include contact_link.html icon="fa-volume-up" label="Freesound" href="https://freesound.org/people/MysteryPancake/" color="#da0b1d" %}
 	</div>
-</div>
+</main>
