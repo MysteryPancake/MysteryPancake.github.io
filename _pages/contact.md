@@ -5,7 +5,7 @@ description: "Contact me here"
 ---
 {% include navbar.html %}
 
-<main class="container mt-5" role="main">
+<main class="container mt-5">
 	<h2 class="mb-4" style="font-weight: 900;">CONTACT ME</h2>
 	<p class="mb-4">
 		<span>Feel free to contact me below, though I'm more likely to reply via email at </span>

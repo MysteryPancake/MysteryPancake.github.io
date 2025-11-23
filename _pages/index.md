@@ -6,7 +6,7 @@ permalink: /
 ---
 {% include navbar.html fixed="true" %}
 
-<header class="text-center d-flex align-items-center position-relative overflow-hidden" style="height: 75vh; background-color: black; box-shadow: 0 0 16px black" role="banner">
+<header class="text-center d-flex align-items-center position-relative overflow-hidden" style="height: 75vh; background-color: black; box-shadow: 0 0 16px black">
 	<canvas id="home_canvas" class="w-100 h-100 position-absolute"></canvas>
 	<div class="w-100">
 		<div>
@@ -25,7 +25,7 @@ permalink: /
 	</div>
 </header>
 
-<main class="container mt-5" role="main">
+<main class="container mt-5">
 	<h2 class="mb-4" style="font-weight: 900;">SHOWREEL</h2>
 	<div style="padding: 56.25% 0 0 0;" class="position-relative mb-5">
 		<iframe data-src="https://player.vimeo.com/video/892894967?title=0&byline=0&portrait=0&quality=1080p" class="position-absolute top-0 left-0 w-100 h-100 lazy-iframe" allow="autoplay; fullscreen; picture-in-picture" title="Showreel"></iframe>
