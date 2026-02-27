@@ -2,7 +2,7 @@ domain: "mysterypancake.github.io"
 url: "https://mysterypancake.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Hallam Roberts" # the name of your site, e.g. ACME Corp.
-description: "Visual effects, motion graphics, coding and music"
+description: "Visual effects, motion graphics and coding"
 include:
   - _pages
 defaults:
@@ -13,5 +13,7 @@ defaults:
 navigation:
   - title: Home
     url: /
+  - title: Resume
+    url: /assets/pdf/Resume.pdf
   - title: Contact
     url: /contact
