@@ -211,5 +211,9 @@ function draw(timestamp) {
 	window.requestAnimationFrame(draw);
 }
 
-window.requestAnimationFrame(draw);
+// Make sure we have an initial lastTime
+window.requestAnimationFrame(function(timestamp) {
+	lastTime = timestamp;
+	window.requestAnimationFrame(draw);
+});
 </script>
