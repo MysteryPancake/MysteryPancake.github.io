@@ -112,7 +112,15 @@ const moveOption = Math.random() > 0.5;
 const textOption = Math.random() > 0.5;
 const colorScheme = Math.random() > 0.5;
 
-function draw() {
+let lastTime = 0;
+const TARGET_TIME = 1000 / 60;
+
+function draw(timestamp) {
+	// Calculate delta time to avoid crazy fast speed
+	const delta = Math.min(timestamp - lastTime, 50);
+	const dt = delta / TARGET_TIME;
+	lastTime = timestamp;
+
 	// Update canvas
 	for (let i = 0; i < particles.length; ++i) {
 		let particle = particles[i];
@@ -127,21 +135,22 @@ function draw() {
 		// Two options for movement, not sure which is my favourite so use both
 		if (moveOption) {
 			// Regular distance
-			particle[2] += xDist * 0.001 * (0.01 + particle[4] * 0.1);
-			particle[3] += yDist * 0.001 * (0.01 + particle[4] * 0.1);
+			particle[2] += xDist * 0.001 * (0.01 + particle[4] * 0.1) * dt;
+			particle[3] += yDist * 0.001 * (0.01 + particle[4] * 0.1) * dt;
 		} else {
 			// Normalised distance
-			particle[2] += Math.sign(xDist) * (0.01 + particle[4] * 0.05);
-			particle[3] += Math.sign(yDist) * (0.01 + particle[4] * 0.05);
+			particle[2] += Math.sign(xDist) * (0.01 + particle[4] * 0.05) * dt;
+			particle[3] += Math.sign(yDist) * (0.01 + particle[4] * 0.05) * dt;
 		}
 		
 		// Dampen velocity
-		particle[2] *= 0.995;
-		particle[3] *= 0.995;
+		const dampen = Math.pow(0.995, dt)
+		particle[2] *= dampen;
+		particle[3] *= dampen;
 
 		// Add velocity to position
-		particle[0] += particle[2];
-		particle[1] += particle[3];
+		particle[0] += particle[2] * dt;
+		particle[1] += particle[3] * dt;
 
 		// Wrap position
 		if (particle[0] < 0) {
@@ -176,7 +185,7 @@ function draw() {
 
 	// Fade trails over time
 	canvasCtx.fillStyle = "black";
-	canvasCtx.globalAlpha = 0.012;
+	canvasCtx.globalAlpha = Math.min(1, 0.012 * dt);
 	canvasCtx.fillRect(0, 0, canvasElem.width, canvasElem.height);
 	canvasCtx.globalAlpha = 1.0;
 
@@ -195,7 +204,7 @@ function draw() {
 			first.style.right = pixels;
 			last.style.left = pixels;
 		}
-		offset--;
+		offset -= dt;
 		desc.style.top = `${eased * 64}px`;
 		desc.style.opacity = 1 - offset / duration;
 	}
