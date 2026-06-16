@@ -15,12 +15,7 @@ permalink: /
 		</div>
 		<div id="home_description" class="text-white position-relative">
 			<span style="font-size: min(4vw, 2.5rem); font-weight: 300;">FX | Motion Graphics | Programming</span>
-			<div style="font-size: 3.5rem;">
-				{% include footer_link.html label="LinkedIn" icon="fa-linkedin" href="https://www.linkedin.com/in/hallamr/" %}
-				{% include footer_link.html label="Vimeo" icon="fa-vimeo" href="https://vimeo.com/mysterypancake" %}
-				{% include footer_link.html label="GitHub" icon="fa-github" href="https://github.com/MysteryPancake" %}
-				{% include footer_link.html label="Instagram" icon="fa-instagram" href="https://instagram.com/mysterypancake1/" %}
-			</div>
+			{% include footer.html %}
 		</div>
 	</div>
 </header>
@@ -55,7 +50,9 @@ permalink: /
 	{% include video_player.html title="Dynamic Machines Challenge" description="<p>A short animation I made in Blender for <a href=\"https://youtu.be/b0-IkxXyhmY?t=5812\" target=\"_blank\">Clint's Dynamic Machines Challenge</a>. Though I didn't make the top 100, it was great fun and I learnt a lot. I only had a week to finish it due to my terrible planning.</p><p>The characters and assets are from <a href=\"https://store.steampowered.com/app/304430/INSIDE/\" target=\"_blank\">Inside by Playdead</a>. I wanted to make the blob creature roll around and smash through things like it does in game, but it turned into an Indiana Jones chase sequence.</p><p>I did the sound design in FL Studio using huge convolution reverb and <a href=\"https://freesound.org/people/MysteryPancake/packs/24648/\" target=\"_blank\">glass smashes</a> I recorded. For more info, check out the breakdown in my <a href=\"https://vimeo.com/765443818\" target=\"blank\">UTS Showreel</a>.</p>" video_id="PG-CNkrQEvY" color="#6C3F3B" youtube="true" %}
 </main>
 
-{% include footer.html %}
+<footer class="pb-3 pt-3 text-center">
+	{% include footer.html %}
+</footer>
 
 <script src="{{ "/assets/js/intersectionobserver_polyfill.js" | relative_url }}"></script>
 <script src="{{ "/assets/js/requestframe_polyfill.js" | relative_url }}"></script>
