@@ -12,10 +12,12 @@ body {
 
 a {
   color: $linkColor;
+  text-decoration: none;
 }
 
 a:hover {
   color: $linkHover;
+  text-decoration: underline;
 }
 
 iframe {
