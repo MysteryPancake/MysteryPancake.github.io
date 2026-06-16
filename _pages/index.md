@@ -28,7 +28,7 @@ permalink: /
 	<h2 class="mb-4" style="font-weight: 900;">ABOUT ME</h2>
 	<div class="mb-5 p-4" style="background-color: #2a2551;">
 		<p>Welcome to my website! I'm currently an FX TD at ILM Sydney.</p>
-		<p>I've been making videos and programming since 2012, including full-stack development and low-level systems programming.</p>
+		<p>I've been making videos and code since 2012, including full-stack development and low-level systems programming.</p>
 		<p>I completed a <a href="/assets/pdf/UOW_Transcript.pdf" target="_blank">Bachelor of Computer Science</a> in 2022, and a <a href="/assets/pdf/UTS_Transcript.pdf" target="_blank">Masters of Animation and Visualisation</a> in 2024.</p>
 		<p>I like <a href="https://github.com/MysteryPancake/Houdini-Fun" target="_blank">experimenting in Houdini</a>, <a href="https://github.com/MysteryPancake/Houdini-OpenCL" target="_blank">GPU programming in OpenCL</a>, <a href="https://www.blender.org/about/credits/" target="_blank">developing Blender</a> and <a href="https://www.shadertoy.com/user/MysteryPancake/sort=love" target="_blank">making shaders</a> for fun.</p>
 		<p class="mb-0">Please <a href="/contact">contact me</a> if you have any interesting R&D projects!</p>
