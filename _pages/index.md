@@ -6,7 +6,7 @@ permalink: /
 ---
 {% include navbar.html fixed="true" %}
 
-<header class="text-center d-flex align-items-center position-relative overflow-hidden" style="height: 75vh; background-color: black; box-shadow: 0 0 16px black">
+<header class="text-center d-flex align-items-center position-relative overflow-hidden" style="height: 75vh; background-color: black;">
 	<canvas id="home_canvas" class="w-100 h-100 position-absolute"></canvas>
 	<div class="w-100">
 		<div>
@@ -14,7 +14,7 @@ permalink: /
 			<span id="home_lastname" class="text-white position-relative" style="font-size: min(10vw, 7rem); font-weight: 200; text-shadow: 0 0 8px white;">Roberts</span>
 		</div>
 		<div id="home_description" class="text-white position-relative">
-			<span style="font-size: min(4vw, 2.5rem); font-weight: 300;">FX | Motion Graphics | Programming</span>
+			<span style="font-size: min(4vw, 2.5rem); font-weight: 300;">FX TD | Programmer</span>
 			{% include footer.html %}
 		</div>
 	</div>
@@ -26,10 +26,12 @@ permalink: /
 		<iframe data-src="https://player.vimeo.com/video/892894967?title=0&byline=0&portrait=0&quality=1080p" class="position-absolute top-0 left-0 w-100 h-100 lazy-iframe" allow="autoplay; fullscreen; picture-in-picture" title="Showreel"></iframe>
 	</div>
 	<h2 class="mb-4" style="font-weight: 900;">ABOUT ME</h2>
-	<div class="mb-5">
-		<p>Welcome to my website! I'm currently a Junior FX TD at ILM Sydney.</p>
-		<p>I've been making videos since around 2012. I started with motion graphics in <a href="https://github.com/MysteryPancake/After-Effects-Fun" target="_blank">After Effects</a>, <a href="https://github.com/MysteryPancake/Blender-Fun" target="_blank">Blender</a> and Photoshop. I did a Bachelor of Computer Science, then a masters at UTS Animal Logic Academy.</p>
-		<p>I like coding, <a href="http://github.com/MysteryPancake/Houdini-Fun" target="_blank">exploring ideas in Houdini</a>, <a href="https://www.blender.org/about/credits/" target="_blank">working on Blender</a> and <a href="https://www.shadertoy.com/user/MysteryPancake/sort=love" target="_blank">making shaders</a> for fun. Contact me if you have any interesting R&D projects!</p>
+	<div class="mb-5 p-4" style="background-color: #2a2551;">
+		<p>Welcome to my website! I'm currently an FX TD at ILM Sydney.</p>
+		<p>I've been making videos and programming since 2012, including full-stack development and low-level systems programming.</p>
+		<p>I completed a <a href="/assets/pdf/UOW_Transcript.pdf" target="_blank">Bachelor of Computer Science</a> in 2022, and a <a href="/assets/pdf/UTS_Transcript.pdf" target="_blank">Masters of Animation and Visualisation</a> in 2024.</p>
+		<p>I like <a href="https://github.com/MysteryPancake/Houdini-Fun" target="_blank">experimenting in Houdini</a>, <a href="https://github.com/MysteryPancake/Houdini-OpenCL" target="_blank">GPU programming in OpenCL</a>, <a href="https://www.blender.org/about/credits/" target="_blank">developing Blender</a> and <a href="https://www.shadertoy.com/user/MysteryPancake/sort=love" target="_blank">making shaders</a> for fun.</p>
+		<p class="mb-0">Please <a href="/contact">contact me</a> if you have any interesting R&D projects!</p>
 	</div>
 	<h2 class="mb-4" style="font-weight: 900;">MY WORK</h2>
 	{% include video_player.html title="Procedural Buildings" description="<p>This was the first time I tried procedural modelling in Houdini. I remade a bunch of Sydney landmarks and turned them into HDAs for easy control. Around this time I was making <a href=\"https://www.shadertoy.com/view/cdXSWj\" target=\"_blank\">music</a> on ShaderToy, maybe you can tell from the sine waves?</p><p>I rendered everything with Cycles in Blender, which was a challenge. I had to write <a href=\"https://github.com/MysteryPancake/Houdini-Tools\" target=\"_blank\">scripts</a> to fix Blender's instancing and remake a few Houdini setups using Geometry Nodes.</p><p>Everything is timed to the music, <a href=\"https://open.spotify.com/track/4NczzeHBQPPDO0B9AAmB8d\" target=\"_blank\">Assumptions by Sam Gellaitry</a>. I didn't make the setups with animation in mind, so it was tricky to sync.</p>" video_id="808257373" color="#342D62" %}

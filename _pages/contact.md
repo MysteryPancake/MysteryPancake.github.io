@@ -14,7 +14,7 @@ description: "Contact me here"
 	<div class="row mx-0">
 		{% include contact_link.html icon="fa-linkedin" label="LinkedIn" href="https://www.linkedin.com/in/hallamr/" color="#0966C2" %}
 		{% include contact_link.html icon="fa-github" label="GitHub" href="https://github.com/MysteryPancake" color="#6739ac" %}
-		{% include contact_link.html icon="fa-youtube-play" label="YouTube" href="https://www.youtube.com/mysterypancake" color="#A90000" %}
+		{% include contact_link.html icon="fa-youtube-play" label="YouTube" href="https://www.youtube.com/channel/UCU2B1sKJnsH0Vl0D71crmKg" color="#A90000" %}
 	</div>
 	<div class="row mx-0">
 		{% include contact_link.html icon="fa-twitter" label="Twitter" href="https://twitter.com/MysteryPancake1" color="#1DA1F2" %}
