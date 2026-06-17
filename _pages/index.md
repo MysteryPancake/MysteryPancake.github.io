@@ -26,12 +26,12 @@ permalink: /
 		<iframe data-src="https://player.vimeo.com/video/892894967?title=0&byline=0&portrait=0&quality=1080p" class="position-absolute top-0 left-0 w-100 h-100 lazy-iframe" allow="autoplay; fullscreen; picture-in-picture" title="Showreel"></iframe>
 	</div>
 	<h2 class="mb-4" style="font-weight: 900;">ABOUT ME</h2>
-	<div class="mb-5 p-4" style="background-color: #2a2551;">
+	<div class="mb-5">
 		<p>Welcome to my website! I'm currently an FX TD at ILM Sydney.</p>
 		<p>I've been making videos and code since 2012, including full-stack development and low-level systems programming.</p>
 		<p>I completed a <a href="/assets/pdf/UOW_Transcript.pdf" target="_blank">Bachelor of Computer Science</a> in 2022, and a <a href="/assets/pdf/UTS_Transcript.pdf" target="_blank">Masters of Animation and Visualisation</a> in 2024.</p>
 		<p>I like <a href="https://github.com/MysteryPancake/Houdini-Fun" target="_blank">experimenting in Houdini</a>, <a href="https://github.com/MysteryPancake/Houdini-OpenCL" target="_blank">GPU programming in OpenCL</a>, <a href="https://www.blender.org/about/credits/" target="_blank">developing Blender</a> and <a href="https://www.shadertoy.com/user/MysteryPancake/sort=love" target="_blank">making shaders</a> for fun.</p>
-		<p class="mb-0">Please <a href="/contact">contact me</a> if you have any interesting R&D projects!</p>
+		<p>Please <a href="/contact">contact me</a> if you have any interesting R&D projects!</p>
 	</div>
 	<h2 class="mb-4" style="font-weight: 900;">MY WORK</h2>
 	{% include video_player.html title="Procedural Buildings" description="<p>This was the first time I tried procedural modelling in Houdini. I remade a bunch of Sydney landmarks and turned them into HDAs for easy control. Around this time I was making <a href=\"https://www.shadertoy.com/view/cdXSWj\" target=\"_blank\">music</a> on ShaderToy, maybe you can tell from the sine waves?</p><p>I rendered everything with Cycles in Blender, which was a challenge. I had to write <a href=\"https://github.com/MysteryPancake/Houdini-Tools\" target=\"_blank\">scripts</a> to fix Blender's instancing and remake a few Houdini setups using Geometry Nodes.</p><p>Everything is timed to the music, <a href=\"https://open.spotify.com/track/4NczzeHBQPPDO0B9AAmB8d\" target=\"_blank\">Assumptions by Sam Gellaitry</a>. I didn't make the setups with animation in mind, so it was tricky to sync.</p>" video_id="808257373" color="#342D62" %}
