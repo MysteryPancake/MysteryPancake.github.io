@@ -14,7 +14,7 @@ permalink: /
 			<span id="home_lastname" class="text-white position-relative" style="font-size: min(10vw, 7rem); font-weight: 200; text-shadow: 0 0 8px white;">Roberts</span>
 		</div>
 		<div id="home_description" class="text-white position-relative">
-			<span style="font-size: min(4vw, 2.5rem); font-weight: 300;">FX TD | Programmer</span>
+			<span style="font-size: min(4vw, 2.5rem); font-weight: 300;">Software Developer | FX TD</span>
 			{% include footer.html %}
 		</div>
 	</div>
